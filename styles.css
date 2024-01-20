@@ -1,0 +1,226 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 0   ;
+    background-color: #f0f0f0;
+}
+
+.search-box {
+    text-align: center;
+   
+    height: 50vh;
+   
+}
+
+.heading {
+    color: #333;
+    margin-top: 30px;
+    padding-top: 100px;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.user-list li {
+    margin: 10px;
+    text-align: center;
+   
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+#userList h3 {
+    color: #333;
+    margin-top: 40px;
+    font-size: 18px;
+   text-transform: uppercase;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.user-card {
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #55a9edca;
+}
+
+.user-card:hover {
+    box-shadow: 0 0 10px rgb(196, 239, 3);
+    background-color: rgba(10, 88, 172, 0.769);
+}
+
+.repo-list {
+    margin-top: 20px;
+    display: flex; /* Set the display property to flex */
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    padding: 10px; /* Add some padding for better appearance */
+}
+
+.user-details{
+   
+    text-align: center;
+    width: 500px;
+    height: 500px;
+   
+    overflow: hidden;
+   margin: auto ;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif monospace;
+    text-transform: uppercase;
+}
+#userName{
+    color: #0e1011;
+
+}
+#userImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make it round */
+    transition: border 0.3s, transform 0.3s; /* Add smooth transition */
+}
+.user-details p {
+    /* Your styles go here */
+    font-weight: 200;
+    margin-top: 20px;
+    padding: 0;
+    text-transform: none;
+    margin-bottom: 10px; /* Example: Add margin at the bottom */
+    font-size: 16px; /* Example: Set font size */
+    color: #333; /* Example: Set text color */
+}
+
+#userImage:hover {
+    border: 2px solid #3498db; /* Change border color on hover */
+    transform: scale(1.1); /* Increase size on hover */
+}
+.repo-item {
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: 600px;
+   
+    cursor: pointer;
+}
+
+.repo-item:hover {
+    box-shadow: 0 0 10px rgba(78, 78, 215, 0.1);
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .pagination button.active {
+    background-color: #0056b3;
+  }
+  
+
+  /* Style for h3 element */
+h3 {
+    font-size: 1.5em;
+    color: rgb(64, 173, 240); /* Change the color as needed */
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the first p element (description) */
+  p {
+    font-size: 1em;
+    color:black; /* Change the color as needed */
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the second p element (Skills) */
+  
+  .box1{
+    width: 500px;
+    text-align: center;
+   overflow-y:auto;
+   
+  
+    
+  }
+  .box1 ul {
+    padding: 0;
+    margin: 0;
+   list-style: none;
+    display: flex; 
+    flex-direction: row; 
+    gap: 3px; 
+   
+}
+.box1 ul li {
+    background-color: rgb(64, 173, 240);
+    width: 200px;
+    text-align: center;
+    border: 2px white solid; ;
+    color: white;
+    padding: 5px 5px 0px 5px ; 
+   
+   
+}
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust this value based on your preference */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button {
+    display: none;
+}
+
+.pagination button.active,
+.pagination button:nth-child(-n+5),
+.pagination button:nth-last-child(-n+5),
+.pagination button:first-child,
+.pagination button:last-child {
+    display: inline-block;
+}
+
+.pagination-btn {
+    margin: 0 5px; /* Adjust this value for spacing between buttons */
+}
+
+
