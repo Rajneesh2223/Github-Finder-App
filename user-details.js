@@ -8,7 +8,7 @@ window.onload = function () {
 };
 
 async function fetchUserData(userName) {
-    const accessToken = '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';
+    const accessToken = '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';
     const apiUrl = `https://api.github.com/users/${userName}`;
 
     try {
@@ -36,7 +36,7 @@ async function fetchUserData(userName) {
 
 async function fetchAndDisplayRepositories(userName, page) {
     const perPage = 10;
-    const accessToken = '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';
+    const accessToken = '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';
     const apiUrl = `https://api.github.com/users/${userName}/repos?page=${page}&per_page=${perPage}`;
 
     try {
